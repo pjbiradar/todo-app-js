@@ -1,0 +1,122 @@
+body{
+    background-color: black;
+}
+.first{
+    margin-top: 40px;
+    margin-left: 163px;
+    font-size:xx-large;
+    font-weight: 600;
+    color:whitesmoke;
+    
+    font-family:Georgia, 'Times New Roman', Times, serif ;
+    /* font-weight: 40px; */
+}
+.first1{
+    position: relative;
+    color:whitesmoke;
+    font-weight: 500;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.second{
+    margin-left: 158px;
+    font-size: xx-large;
+    color: whitesmoke;
+    font-weight: 100;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+.fa-plus-circle{
+    position: relative;
+    left: 1019px;
+    color: blue;
+    font-size: x-large;
+    bottom: 116px;
+}
+.three{
+    margin-left: 1066px;
+    position: relative;
+    bottom: 168px;
+    font-size:x-large;
+    color: whitesmoke;
+    font-weight: 300;
+    
+}
+.boxi{
+    border: 2px solid whitesmoke;
+    border-radius: 8px;
+    width: 403px;
+    height: 221px;
+    position: absolute;
+    right: 626px;
+    top: 229px;
+    background-color: white;
+    padding: 4px 4px 4px 4px;
+}
+.box1{
+    color:red;
+    font-size:xx-large;
+    font-family: -webkit-pictograph;
+    text-align: center;
+    margin-top: 25px;
+    /* margin-left: 1px; */
+}
+.box2{
+    border-radius: 6px;
+    border: 2px solid black;
+    width: 327px;
+    position: relative;
+    bottom: 16px;
+    height: 30px;
+    margin-left: 41px;
+    text-align: center;
+    font-size: larger;
+    color: black;
+    
+
+}
+.box3{
+    background-color: red;
+    color: white;
+    font-size: x-large;
+    width: 103px;
+    height: 45px;
+    margin-left: 60px;
+    padding: 10px 10px 34px 10px;
+    position: relative;
+    bottom: 27px;
+    border: 2px solid red;
+    border-radius: 25px;
+}
+.box4{
+    background-color: red;
+    color: white;
+    font-size: x-large;
+    width: 103px;
+    height: 45px;
+    margin-left: 23px;
+    position: relative;
+    bottom: 27px;
+    padding: 10px 10px 34px 10px;
+    margin-top: 30px;
+    border: 2px solid red;
+    border-radius: 29px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
