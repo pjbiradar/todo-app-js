@@ -1,3 +1,6 @@
+
+
+
 const clic=()=>{
     var bigbox=document.createElement("div");
     bigbox.setAttribute("id","bigbox1");
@@ -40,7 +43,7 @@ var cap;
 function goo(){
     var capture=document.getElementById("insidee1");
     cap=capture.value;
-    console.log(cap);
+    //console.log(cap);
 
     var q=document.getElementById("top1");
     q.style.filter="none";
@@ -53,34 +56,41 @@ function goo(){
 
 
 
-console.log(take);
+
 
 const illusion=()=>{
-
+   console.log(cap);
     var build=document.createElement("div");
     build.setAttribute("class","child");
-    build.setAttribute("id",take+"diff");
-    build.setAttribute("id",take+"get")
-    build.setAttribute("id",take+"diff1");
+    build.setAttribute("id",cap);
    
     
     var build1=document.createElement("p");
-    build1.setAttribute("id","place");
+    build1.setAttribute("class","placee")
+    build1.setAttribute("id",cap+"place");
     build1.innerHTML=cap;
+    build1.innerHTML= <a href="#mark"></a>
 
     var line=document.createElement("hr");
 
     var build2=document.createElement("div");
-    build2.setAttribute("id","thingsudid");
+    build2.setAttribute("class","thingsudid");
+    build2.setAttribute("id",cap+"thingsudid")
 
     var build3=document.createElement("div");
     build3.setAttribute("class","write");
+    build3.setAttribute("id",cap+"write")
 
     var icon1=document.createElement("span");
-    icon1.setAttribute("onclick","add()");
+    icon1.setAttribute("class","ico1")
+    icon1.setAttribute("id",cap+"ico1")
+    icon1.setAttribute("onclick","add(this.getAttribute('id'))");
     icon1.innerHTML = '<i class="fas fa-plus-square fa-2x aria-hidden="true" "></i>'
     
     var icon2=document.createElement("span");
+    icon2.setAttribute("class","ico2")
+    icon2.setAttribute("id",cap+"ico2")
+    icon2.setAttribute("onclick","dele(this.getAttribute('id'))");
     icon2.innerHTML = '<i class="fas fa-trash-alt fa-2x aria-hidden="true" "></i>'
 
     build2.appendChild(build3);
@@ -98,7 +108,8 @@ function goo1(){
     var r=document.getElementById("bigbox1");
     r.remove();
 }
-function add(){
+var vall
+function add(el){
     var bigboxx=document.createElement("div");
     bigboxx.setAttribute("id","bigbox2");
     
@@ -130,11 +141,13 @@ function add(){
     bigboxx.appendChild(insidefour);
 
     document.getElementById("top").appendChild(bigboxx);
+    vall=el
     
 }
 
 var take;
 function secondclick(){
+    
 
     var gasp=document.getElementById("insideee1");
     take=gasp.value;
@@ -149,47 +162,66 @@ function secondclick(){
 
     hurray()
 }
-var build3=document.createElement("div");
+
 
 function hurray(){
-
-
-    var create=document.createElement("div");
-    create.setAttribute("id","main");
-
     var create1=document.createElement("p");
-    create1.setAttribute("id","mainn");
+    create1.setAttribute("class","innerp")
+    create1.setAttribute("id",cap+take+"master");
+    
+    var creater=document.createElement("span")
+    creater.setAttribute("id",take+"mark")
     create1.innerHTML=take;
 
-    var create2=document.createElement("button");
-    create2.setAttribute("id","mainn1");
-    create2.setAttribute("onclick","change");
+    var create2=document.createElement("span");
+    create2.setAttribute("class","markdone")
+    create2.setAttribute("id",take+"markdone");
+    create2.setAttribute("onclick","change(this.getAttribute('id'))");
     create2.innerHTML="markdone";
-
-    build3.appendChild(create);
-    build3.appendChild(create1);
-    build3.appendChild(create2);
+    
+    create1.appendChild(creater)
+    create1.appendChild(create2)
+    var find=document.getElementById(vall)
+    var got=find.previousElementSibling
+    got=got.id
+    document.getElementById(got).appendChild(create1)
     
 
 
-    document.getElementById("start").appendChild(build3)
 
+}
+// the line is not changing
+function change(markdone){
+    var assign=document.getElementById(markdone);
+    console.log(assign)
+    var asking=assign.previousElementSibling
+    console.log(asking)
+    asking.style.color="purple";
+    assign.remove()
+
+    
+
+}
+// trying to remove the delete button
+function dele(child){
+    var will=document.getElementsByClassName("child");
+    console.log(will);
+    will.remove()
 
 
 
 }
 
+// function next(place){
+//     var linc=document.getElementById(place);
+//     linc.innerHTML=illusion+secondclick+hurray;
+//     top1.appendChild(linc)
 
 
+// }
 
 
-
-
-
-
-
-
-
+    
 
 
 

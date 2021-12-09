@@ -285,6 +285,42 @@ input{
 }
 
 
+.markdone{
+    background-color: skyblue;
+    border-radius: 11px;
+    position: relative;
+    left: 129px;
+    font-size: 17px;
+    color: hotpink;
+}
+.innerp{
+    position: relative;
+    color: brown;
+    left: 8px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
