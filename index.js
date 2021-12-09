@@ -69,7 +69,7 @@ const illusion=()=>{
     build1.setAttribute("class","placee")
     build1.setAttribute("id",cap+"place");
     build1.innerHTML=cap;
-    build1.innerHTML= <a href="#mark"></a>
+    // build1.innerHTML= <a href="#mark"></a>
 
     var line=document.createElement("hr");
 
@@ -203,14 +203,14 @@ function change(markdone){
 
 }
 // trying to remove the delete button
-function dele(child){
-    var will=document.getElementsByClassName("child");
-    console.log(will);
-    will.remove()
+// function dele(child){
+//     var will=document.getElementsByClassName("child");
+//     console.log(will);
+//     will.remove()
 
 
 
-}
+// }
 
 // function next(place){
 //     var linc=document.getElementById(place);
