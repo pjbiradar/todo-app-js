@@ -1,307 +1,188 @@
+*{
+    padding: 0px;
+    margin: 0px;
+
+}
 body{
     background-color: black;
 }
-.first{
-    margin-top: 40px;
-    margin-left: 163px;
-    font-size:xx-large;
+.todomain{
+    color: white;
+    font-size: 35px;
     font-weight: 600;
-    color:whitesmoke;
-    
-    font-family:Georgia, 'Times New Roman', Times, serif ;
-    /* font-weight: 40px; */
+    font-family: "Gill Sans", sans-serif;
+    margin-top: 80px;
+    margin-left:16% ;
+   
 }
-.first1{
-    position: relative;
-    color:whitesmoke;
+#power{
+    font-size: 28px;
+    color: white;
+    margin-top: 40px;
+    margin-left: 75px;
+}
+.listmain{
     font-weight: 500;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    font-weight: 500
 }
-.second{
-    margin-left: 158px;
-    font-size: xx-large;
-    color: whitesmoke;
-    font-weight: 100;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-
+.addmain{
+     float: right;
+     font-size: 30px;
+     font-weight: 500;
+     margin-right: 30%;
 }
-.circle{
-    position: relative;
-    left: 1019px;
-    color: blue;
-    font-size: x-large;
-    bottom: 116px;
-}
-.three{
-    margin-left: 1066px;
-    position: relative;
-    bottom: 168px;
-    font-size:x-large;
-    color: whitesmoke;
-    font-weight: 300;
+#innermain{
     
-}
-#start{
-    width: 60%;
+    width: 80%;
     margin-left: 10%;
     margin-right: 10%;
-    margin-top: 100px;
+    margin-top: 15px;
+    
+    /* border: 1px white solid; */
     flex-basis: 33%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: start;
-    justify-content: space-evenly;
-   
+    justify-content:start;
+    
 }
 .fa-plus-circle{
-    color: blue;
+    color: rgb(26, 26, 228);
     margin-right: 5px;
     cursor: pointer;
 }
-
-#bigbox1{
-    border: 2px solid tomato;
-    border-radius: 5px;
-    width: 360px;
-    height: 200px;
-    top: 315px;
-    position: absolute;
-    margin-left: 512px;
-    background-color: whitesmoke;
-}
-label{
-    color: red;
-    font-size: x-large;
-    position: relative;
-    left: 90px;
-    top: 16px;
-    
-}
-input{
-    border-radius: 3px;
-    border: 2px solid blanchedalmond;
-    width: 271px;
-    height: 39px;
-    top: 30px;
-    position: relative;
-    left: 47px;
-    font-size:medium;
-    color: blueviolet;
-    text-align: center;
-    
-
-}
-
-#insidee2{
-    background-color: red;
-    border: 3px solid red;
-    border-radius: 22px;
-    position: relative;
-    left: 45px;
-    top: 57px;
-    width: 83px;
-    color: white;
-    font-size: larger;
-    height: 37px;
-    
-}
-#insidee3{
-    background-color: red;
-    border: 3px solid red;
-    border-radius: 22px;
-    position: relative;
-    left: 146px;
-    top: 57px;
-    width: 90px;
-    color: white;
-    font-size: larger;
-    height: 37px;
-
-}
-#top{
-    position: relative;
-    height: 200px;
-    width: 100%;
-}
-
-.child{
-    border: 2px solid white;
-    width: 262px;
-    height: 378px;
-    position:relative;
-    left: 200px;
-    margin-right: 30px;
-    margin-top: 40px;
-    color: red;
-    box-sizing: border-box;
-    background-color: white;
-    
-  
-}
-
-#thingsudid{
-    width: 300px;
-    height: 30px;
-    position: relative;
-}
-.write{
-    width: 300px;
-    height: 390px;
-}
-.fa-2x{
-    font-size: 1.7em;
-}
-.place{
-    text-align: center;
-    color: red;
-    margin-top: 20px;
-    margin-bottom: 30px;
-    font-size: larger;
-
-}
 .fa-plus-square{
     position: absolute;
-    bottom: 30px;
+    bottom: 10px;
+    right: 20px;
+     color: rgb(228, 26, 26);
     cursor: pointer;
-    right: 114px;
-    top: 261px;
-    /* filter: blur(10px); */
-}
-
-#trash{
-    position: relative;
-    font-size: x-large;
-    left: 200px;
-    top: 251px;
-    color: blue;
-
 }
 .fa-trash-alt{
     position: absolute;
-    top: 260px;
-    left: 203px;
+    bottom: 10px;
+    right: 70px;
+    cursor: pointer;
+    color: black;
+
+}
+
+#main1{
+    position: relative;
+    height: 87vh;
+    width: 100%;
+}
+.book{
+    height: 342px;
+    width: 221px;
+    border: 1px solid white;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 65px;
+    position: relative;
+    box-sizing: border-box;
+    background-color: white;
+}
+.databox{
+    width: 230px;
+    height: 279px;
+    position: relative;
+  
+    
+}
+.fa-2x {
+    font-size: 1.7em;
+}
+.fa-trash-alt {
     color: blue;
+}
+.databoxin{
+     width: 230px;
+    height: 235px;
+    
+
+}
+.trip{
+    color: red;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 22px;
+    font-weight: 600;
+}
+.main2{
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    filter: blur(7px);
+    position: relative;
+}
+#inputbox{
+   width: 325px;
+   height: 180px;
+   border: 1px red solid;
+   position: absolute;
+   top:37vh;
+   left: 35%;
+   padding-top: 18px;
+   border-radius: 6px;
+   background-color: white;
+
+}
+label{
+    font-size:30px ;
+    color: red;
+    padding-left: 72px;
+
+}
+input{
+    margin-top: 20px;
+    border: 1px red solid;
+    height: 29px;
+    width: 228px;
+    margin-left: 40px;
+}
+#adde{
+    margin-top: 20px;
+    height: 40px;
+    font-size: 27px;
+    border: 1px solid red;
+    background-color: red;
+    color:white;
+    width: 98px;
+    margin-left: 54px;
+    border-radius: 27px;
+    cursor: pointer;
+    
+
+}
+#del{
+    margin-top: 20px;
+    height: 40px;
+    font-size: 27px;
+    border: 1px solid red;
+    background-color: red;
+    color:white;
+    width: 98px;
+    margin-left: 35px;
+    border-radius: 27px;
     cursor: pointer;
 
 }
-#place{
-    font-size: 22px;
-    color: red;
-    position: relative;
-    left: 30px;
-}
-#bigbox2{
-    border: 2px solid tomato;
-    border-radius: 5px;
-    width: 360px;
-    height: 200px;
-    top: 315px;
-    position: absolute;
-    margin-left: 512px;
-    background-color: whitesmoke;
-}
-label{
-    color: red;
-    font-size: x-large;
-    position: relative;
-    left: 90px;
-    top: 16px;
-    
-}
-input{
-    border-radius: 3px;
-    border: 2px solid blanchedalmond;
-    width: 271px;
-    height: 39px;
-    top: 30px;
-    position: relative;
-    left: 47px;
-    font-size:medium;
-    color: blueviolet;
+.taskdata{
+    font-size: 20px;
     text-align: center;
-    
-
+    color: darkmagenta;
 }
-
-#insideee2{
-    background-color: red;
-    border: 3px solid red;
-    border-radius: 22px;
-    position: relative;
-    left: 45px;
-    top: 57px;
-    width: 83px;
-    color: white;
-    font-size: larger;
-    height: 37px;
-    
+.mark{
+    color:purple;
+    font-size: 20px;
+    border-radius: 18px;
+    padding: 2px;
+    margin-left: 85px;
+    background-color:deepskyblue;
 }
-#insideee3{
-    background-color: red;
-    border: 3px solid red;
-    border-radius: 22px;
-    position: relative;
-    left: 146px;
-    top: 57px;
-    width: 90px;
-    color: white;
-    font-size: larger;
-    height: 37px;
-
-}
-#main{
-    margin-left: 30px;
-}
-#mainn{
-    position: relative;
-    color: blue;
-    right: 119px;
-    top: 57px;
-    font-size: larger;
-
-}
-#mainn1{
-    background-color: greenyellow;
-    position: relative;
-    top: 82px;
-    right: 39px;
-    color: white;
-    border: 2px solid greenyellow;
-    border-radius: 18px; 
-
-}
-
-#diff{
-    color: blueviolet;
-    position: relative;
-    left: 40px;
-}
-#diff1{
-    color: blueviolet;
-    position: relative;
-    left: 100px;
-
-}
-
-
-.markdone{
-    background-color: skyblue;
-    border-radius: 11px;
-    position: relative;
-    left: 129px;
-    font-size: 17px;
-    color: hotpink;
-}
-.innerp{
-    position: relative;
-    color: brown;
-    left: 8px;
-
-}
-
-
-
 
 
 
