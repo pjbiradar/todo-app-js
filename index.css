@@ -74,8 +74,8 @@ body{
     width: 100%;
 }
 .book{
-    height: 342px;
-    width: 221px;
+    height: 350px;
+    width: 230px;
     border: 1px solid white;
     margin-top: 25px;
     margin-bottom: 25px;
@@ -94,7 +94,7 @@ body{
 .fa-2x {
     font-size: 1.7em;
 }
-.fa-trash-alt {
+.fa-trash-alt{
     color: blue;
 }
 .databoxin{
@@ -119,40 +119,40 @@ body{
     position: relative;
 }
 #inputbox{
-   width: 325px;
-   height: 180px;
+   width: 305px;
+   height: 150px;
    border: 1px red solid;
    position: absolute;
    top:37vh;
-   left: 35%;
+   left: 37%;
    padding-top: 18px;
    border-radius: 6px;
    background-color: white;
 
 }
 label{
-    font-size:30px ;
+    font-size:25px ;
     color: red;
-    padding-left: 72px;
+    padding-left: 75px;
 
 }
 input{
     margin-top: 20px;
     border: 1px red solid;
-    height: 29px;
-    width: 228px;
+    height: 22px;
+    width: 220px;
     margin-left: 40px;
 }
 #adde{
     margin-top: 20px;
     height: 40px;
-    font-size: 27px;
+    font-size: 25px;
     border: 1px solid red;
     background-color: red;
     color:white;
-    width: 98px;
+    width: 80px;
     margin-left: 54px;
-    border-radius: 27px;
+    border-radius: 6px;
     cursor: pointer;
     
 
@@ -160,59 +160,41 @@ input{
 #del{
     margin-top: 20px;
     height: 40px;
-    font-size: 27px;
+    font-size: 25px;
     border: 1px solid red;
     background-color: red;
     color:white;
-    width: 98px;
+    width: 80px;
     margin-left: 35px;
-    border-radius: 27px;
+    border-radius: 6px;
     cursor: pointer;
 
 }
 .taskdata{
     font-size: 20px;
     text-align: center;
-    color: darkmagenta;
+    color: red;
 }
 .mark{
-    color:purple;
-    font-size: 20px;
-    border-radius: 18px;
+    color: black;
+    font-size: 14px;
+    border-radius: 6px;
     padding: 2px;
-    margin-left: 85px;
-    background-color:deepskyblue;
+    margin-left: 5px;
+    background-color:rgb(81, 160, 163)
 }
+#separatemain{
+    margin-left: 35%;
+    margin-top: 5%;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
+.backer{
+    margin-left: 21%;
+    font-size: 30px;
+    color: darkgreen;
+    
+}
+.fa-arrow-alt-circle-left{
+    color: white;
+    margin-right: 10px;
+}

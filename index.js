@@ -11,6 +11,8 @@ function begin() {
 
     let tripping = document.createElement("p")
     tripping.setAttribute("class", "trip")
+    tripping.setAttribute("id",val+"trip")
+    tripping.setAttribute("onclick","insider(this.getAttribute('id'))")
     tripping.innerHTML = val
 
     let hori = document.createElement("hr")
@@ -42,13 +44,40 @@ function begin() {
     document.getElementById("innermain").appendChild(create1)
 
 }
+function insider(dat){
+     let main=document.getElementById("main")
+    main.style.display="none"
+    var po=document.getElementById(dat)
+    var re=po.parentNode
+    var box=re.id
+    var boxmain=document.getElementById(box)
+    var back=document.createElement("span")
+    back.setAttribute('class','backer')
+    back.setAttribute("onclick","home(this.getAttribute('class'))")
+    back.innerHTML = '<i class="fas fa-arrow-alt-circle-left aria-hidden="true""></i>'+'back'
+    
+    document.getElementById("separatemain").appendChild(back)
+    document.getElementById("separatemain").appendChild(boxmain)
+}
+function home(fil){
+    var past=document.getElementsByClassName(fil)
+    var mi=past[0].parentNode
+    var about=mi.id
+    var node=document.getElementById(about)
+    var bb=node.lastChild
+        node.removeChild(node.firstChild)
+    var rev=document.getElementById("main")
+    rev.style.display="block"
+    document.getElementById("innermain").appendChild(bb)
+
+}
 function nothing() {
     var openbox = document.createElement("div")
     openbox.setAttribute("id", "inputbox")
 
     var lab = document.createElement("label")
     lab.setAttribute("for", "datatrip")
-    lab.innerHTML = "Enter Task List";
+    lab.innerHTML = "Enter Task list";
 
 
     var inputfiller = document.createElement("input")
@@ -77,6 +106,7 @@ function nothing() {
 
     document.getElementById("main1").appendChild(openbox)
     var master = document.getElementById("main")
+
     master.style.filter = "blur(7px)"
 
 
@@ -155,7 +185,7 @@ function bring() {
 function und(go) {
     var i = document.getElementById(go)
     var t = i.previousElementSibling
-    t.style.textDecorationhori = "hori-through";
+    t.style.textDecorationLine = "line-through";
     i.remove()
 
 
@@ -167,7 +197,7 @@ function obtaindata(go) {
 
     var lab = document.createElement("label")
     lab.setAttribute("for", "datatrip")
-    lab.innerHTML = "Enter Task List";
+    lab.innerHTML = "Enter Task list";
 
 
     var inputfiller = document.createElement("input")
@@ -226,20 +256,14 @@ function delvalue(go) {
         mainbox.remove()
         var count = isemp.childElementCount
         if (count == 0) {
-            var emp = document.createElement("span")
-            emp.setAttribute("id", "emp")
-            emp.innerText = "taskcreate is emp"
-            isemp.appendChild(emp)
+            var empty = document.createElement("span")
+            empty.setAttribute("id", "empty")
+            empty.innerText = "task list is empty"
+            isemp.appendChild(empty)
         }
     }
 
 }
-
-
-
-
-
-
 
 
 
